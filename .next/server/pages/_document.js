@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_Document__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/Document */ "next/Document");
 /* harmony import */ var next_Document__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_Document__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "C:\\Users\\gabak\\OneDrive\\WorkPlace\\web projects\\podcastrnext\\src\\pages\\_document.tsx";
+var _jsxFileName = "C:\\Users\\gabak\\OneDrive\\WorkPlace\\WebProjects\\podcastrnext\\src\\pages\\_document.tsx";
 
 
 class MyDocument extends next_Document__WEBPACK_IMPORTED_MODULE_2___default.a {
