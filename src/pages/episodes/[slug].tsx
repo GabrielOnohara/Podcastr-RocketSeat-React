@@ -56,8 +56,25 @@ export default function Episode({episode} :EpisodeProps) {
 }
 
 export const getStaticPaths : GetStaticPaths = async() => {//quando usamos ssg com criacao dinamica de pags precisamos usar este metodo
+
+  const {data}  = await api.get('episodes',{
+    params: {
+      _limit: 12,
+      _sort: 'published_at',
+      _order: 'desc'
+    }
+  });
+
+  const paths = data.map(episode => {
+    return {
+      params: {
+        slug:episode.id,
+      }
+    }
+  });
+
   return {
-    paths:  [],
+    paths,
     fallback: 'blocking'
   }
 }
